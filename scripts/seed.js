@@ -1,11 +1,11 @@
-const { sql } = require('@vercel/postgres');
-const {
+import { sql } from '@vercel/postgres';
+import {
   invoices,
   customers,
   revenue,
   users,
-} = require('../app/lib/placeholder-data.js');
-const bcrypt = require('bcrypt');
+} from '../app/lib/placeholder-data.js';
+import bcrypt from 'bcrypt';
 
 async function seedUsers() {
   try {
